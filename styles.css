@@ -227,7 +227,6 @@ img {
 
 
 
-
 #menuToggle {
   overflow: hidden;
   position: absolute;
@@ -308,7 +307,7 @@ img {
     object-fit: cover;
     width: 5rem;
     height: 5rem;
-    border: 4px solid #cd7e00bb;
+    border: 4px solid #03a196;
     border-radius: 999px;
     display: flex;
     justify-content: center;
@@ -400,20 +399,171 @@ img {
   }
 
 
-
-
-
-
-
+  
 .presentation {
     align-items: center;
     margin-top: -30px;
     margin-left: 15%;
     margin-right: 15%
 }
+
+
 .hotbar{
     background: linear-gradient(87deg, #024c92 0, #03a196 100%) !important;
     margin-top: -100px;
     width: 100%;
     height: 240px;
+}
+
+
+
+
+
+.corner-button {
+  margin-top: 30px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.01rem;
+  cursor: pointer;
+  background: transparent;
+  border: 0.5rem solid currentColor;
+  padding: 10px 10px;
+  font-size: 1.7rem;
+  color: #0a4fda;
+  position: relative;
+  transition: color 0.3s;
+  z-index: 1;
+}
+.corner-button:hover {
+  color: #03a196;
+}
+.corner-button:hover::before {
+  width: 0;
+}
+.corner-button:hover::after {
+  height: 0;
+}
+.corner-button:active {
+  border-width: 0.25rem;
+}
+.corner-button::before, .corner-button::after {
+  content: "";
+  position: absolute;
+  background: #052f85;
+  z-index: -1;
+  transition: all 0.3s;
+} 
+.corner-button::before {
+  width: calc(100% - 3rem);
+  height: calc(101% + 1rem);
+  top: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.corner-button::after {
+  height: calc(100% - 3rem);
+  width: calc(101% + 1rem);
+  left: -0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+.contact{
+  margin-top: 0;
+  display: none;
+}
+
+.contact-form-wrapper {
+  padding: 100px 0;
+}
+
+.contact-form {
+  padding: 30px 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  max-width: 400px;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form .form-input,
+.form-text-area {
+  background-color: #f0f4f5;
+  height: 50px;
+  padding-left: 16px;
+}
+
+.contact-form .form-text-area {
+  background-color: #f0f4f5;
+  height: auto;
+  padding-left: 16px;
+}
+
+.contact-form .form-control::placeholder {
+  color: #aeb4b9;
+  font-weight: 500;
+  opacity: 1;
+}
+
+.contact-form .form-control:-ms-input-placeholder {
+  color: #aeb4b9;
+  font-weight: 500;
+}
+
+.contact-form .form-control::-ms-input-placeholder {
+  color: #aeb4b9;
+  font-weight: 500;
+}
+
+.contact-form .form-control:focus {
+  border-color: #052f85;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.07), 0 0 8px #052f85;
+}
+
+.contact-form .title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.contact-form .description {
+  color: #aeb4b9;
+  font-size: 14px;
+  text-align: center;
+}
+
+.contact-form .submit-button-wrapper {
+  text-align: center;
+}
+
+.contact-form .submit-button-wrapper input {
+  border: none;
+  border-radius: 4px;
+  background-color: #052f85;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 60px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.contact-form .submit-button-wrapper input:hover {
+  background-color: #052f85;
+}
+
+.titlecontact{
+  font-size: 4em;
+  text-shadow:#5EE8FF 0 -2px 0,
+#08728a 2px 2px 0,
+#025669 4px 4px 0,
+#002478 6px 6px 0.5px,
+#333333 8px 11px 10px;
+color:#00CFFF;
+margin-top: -90px;
+text-align: center;
+}
+.name{
+  margin-top: 30px;
 }

@@ -30,7 +30,7 @@
         </nav>
      </header>
     <div class="presentation">
-        <div class="card-client">
+        <div id="card" class="card-client">
             <div class="user-picture">
                 <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
                     <path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"></path>
@@ -66,8 +66,39 @@
                     <span class="tooltip-social">LinkedIn</span>
                 </a>
             </div>
+            <button id="corner-button" class="corner-button" onclick="buttonclick()">Me contacter</button>
         </div>
     </div>
+    <div id="bottom-of-page">
+        <div id="contact" class="contact">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+            <div>
+  <div class="contact-form-wrapper d-flex justify-content-center">
+    <form action="#" class="contact-form">
+        <h1 class="titlecontact">Contact</h1>
+      <div class="name">
+        <input type="text" class="form-control rounded border-white mb-3 form-input" id="name" placeholder="Name" required>
+      </div>
+      <div>
+        <input type="email" class="form-control rounded border-white mb-3 form-input"  id="email" placeholder="Email" required>
+      </div>
+      <div class="name">
+        <input type="text" class="form-control rounded border-white mb-3 form-input" id="object" placeholder="Object" required>
+      </div>
+      <div>
+        <textarea id="message" class="form-control rounded border-white mb-3 form-text-area" rows="5" cols="30" placeholder="Message" required></textarea>
+      </div>
+      <div class="submit-button-wrapper">
+        <input type="submit" value="Send">
+      </div>
+    </form>
+  </div>
+</div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
      <script src="app.js"></script>
 </body>
 </html>
