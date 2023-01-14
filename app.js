@@ -51,9 +51,6 @@ function buttonclick(){
 }
 
 (function() {
-   'use strict';
-   window.addEventListener('load', function() {
-       // Fetch all the forms we want to apply custom Bootstrap validation styles to
        var forms = document.getElementsByClassName('contact-form');
        
        // Loop over them and prevent submission
@@ -66,6 +63,5 @@ function buttonclick(){
                send()
            }, false);
        });
-   }, false);
 })();
 
